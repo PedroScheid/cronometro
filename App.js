@@ -8,7 +8,7 @@ let hh = 0;
 
 export default function App() {
   const [numero, setNumero] = useState(0);
-  const [botao, setBotao] = useState('COMEÇAR');
+  const [botao, setBotao] = useState('COMEÇAR!');
   const [ultimo, setUltimo] = useState(null);
 
   function vai(){
@@ -17,7 +17,7 @@ export default function App() {
       clearInterval(timer);
       timer = null;
 
-      setBotao('COMEÇAR');
+      setBotao('COMEÇAR!');
     }else{
       //girar o timer
       timer = setInterval(() => {
@@ -58,7 +58,7 @@ export default function App() {
     ss = 0;
     mm = 0;
     hh = 0;
-    setBotao('COMEÇAR')
+    setBotao('COMEÇAR!')
   }
 
   return (
